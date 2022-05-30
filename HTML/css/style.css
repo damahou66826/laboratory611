@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #222;
+    font-family: "Helvetica";
+    overflow: hidden;
+}
+
+#control {
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    color: orange;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    transition: all .5s linear;
+}
+
+#btn {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+}
+
+#btn span {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin-right: 0;
+    border-right: 3px solid #fff;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#btn.vertical span {
+    display: block;
+    width: 23px;
+    height: 1px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #fff;
+    border-right: 0;
+}
+
+#btn.vertical span:last-child {
+    margin-right: 0;
+}
+
+#control.slide {
+    left: 0px;
+    transition: left .5s linear;
+}
+
+#ball,
+#rect {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+#ball {
+    border-right: none;
+    margin-right: -5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: orange;
+}
+
+#rect {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#control h1 {
+    font-size: 30px;
+    padding: 0;
+    color: orange;
+    margin: 10px 0 30px 30px;
+    font-family: "Microsoft Yahei";
+    font-weight: 100;
+}
+
+#control p {
+    margin-bottom: -10px;
+}
+
+#control input {
+    border: none;
+    background-color: transparent;
+    margin: 20px 0;
+    outline: none;
+}
+
+#control input[type="text"] {
+    width: 100%;
+    font-size: 25px;
+    appearance: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ededed;
+    color: #ededed;
+}
+
+#control input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    /* background-color: silver; */
+    height: 8px;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(#ffa200, #ffa200) no-repeat white;
+    background-size: 50% 100%;
+}
+
+#control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #aaa;
+    width: 8px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#control input[type="range"]::-webkit-slider-thumb:hover {
+    background: #666;
+}
+
+#control #dur {
+    background-size: 50% 100%;
+}
+
+#control #speed {
+    background: linear-gradient(to right, #ffa200, white 0%, white);
+    background-size: 100% 100%;
+}
+
+#control #rad {
+    background: linear-gradient(to right, #ffa200, white 10%, white);
+    background-size: 100% 100%;
+}
+
+#control #res {
+    background: linear-gradient(to right, #ffa200, white 0%, white);
+    background-size: 100% 100%;
+}
+
+#control input[type="button"] {
+    padding: 5px;
+    margin: 5px 0;
+    background: linear-gradient(to bottom right, red 10%, white 90%);
+    border: 0px;
+    width: 100%;
+    color: white;
+    font-weight: white;
+}
